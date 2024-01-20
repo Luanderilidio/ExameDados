@@ -5,6 +5,7 @@ import { Base } from "../../components/Base";
 import { Session2 } from "../../components/Sessions/Session-2";
 import Background from '../../assets/backgroundGrid.svg'
 import { Session3 } from "../../components/Sessions/Session-3";
+import { Session4 } from "../../components/Sessions/Session-4";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Session1 />
       <Session2 />
       <Session3 />
+      {/* <Session4 /> */}
     </div>
   );
 }

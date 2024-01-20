@@ -1,10 +1,12 @@
 import { Base } from "../Base";
 import Logo from "../../assets/ExameDadosLogo.svg";
+import Ilustration10 from "../../assets/Ilustration10.svg";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 
 export const Header = () => {
   return (
-    <Base className="border-b border-dashed border-white/10">
+    <Base className="border-b border-dashed border-white/10 relative">
+      
       <div className="w-full grid grid-cols-12  py-2">
         <div className="col-span-12 flex items-center justify-between">
           <img src={Logo} alt="" className="w-14" />
@@ -36,6 +38,7 @@ export const Header = () => {
           </button>
         </div>
       </div>
+      {/* <img src={Ilustration10} className="absolute left-0 -bottom-5 opacity-30" /> */}
     </Base>
   );
 };
