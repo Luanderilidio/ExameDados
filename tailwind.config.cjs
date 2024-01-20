@@ -7,6 +7,8 @@ module.exports = {
         Anton: ["Anton", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
         Inter: ["Inter", "sans-serif"],
+        Inter: ["Sara", "sans-serif"],
+        Sora: ["Sora", "sans-serif"],
       },
     },
   },
