@@ -4,11 +4,10 @@ import Ilustration6 from "../../../assets/Ilustration6.svg";
 import Ilustration7 from "../../../assets/Ilustration7.svg";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 
-
 export const Session2 = () => {
   return (
     <Base>
-      <div className="h-screen grid grid-cols-12 gap-10 relative ">
+      <div className="h-screen grid grid-cols-12 gap-10 relative !font-Sora">
         <img
           src={Ilustration6}
           alt=""
@@ -20,12 +19,12 @@ export const Session2 = () => {
           className="absolute right-0 w-48 top-10 opacity-30"
         />
 
-        <div className="col-span-5  flex gap-3">
+        <div className="col-span-5  flex gap-3 ">
           <div className="w-10 h-20 bg-amber-600 rounded-full transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-[#ffba3a]/30 hover:shadow-[#ffba3a]/20 active:shadow-[#ffba3a]/5" />
           <div className="flex flex-col justify-between">
             <div>
               <h1 className="text-5xl font-normal font-Sora w-full">
-                Quem <span className="italic">Somos</span> 
+                Quem <span className="italic">Somos</span>
               </h1>
               <p className="text-md font-normal opacity-80 mt-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -36,16 +35,16 @@ export const Session2 = () => {
               </p>
             </div>
             <img src={Ilustration5} alt="" className=" w-full opacity-30" />
-            
+
             <button className="w-fit py-2 px-7 flex items-center justify-center gap-2 rounded-full  border-2 border-amber-500 border-dashed hover:bg-amber-500 text-amber-500 hover:text-black font-Sora font-semibold transition ease-in-out hover:scale-110 active:scale-95 shadow-xl shadow-[#ffba3a]/5 hover:shadow-[#ffba3a]/10 active:shadow-[#ffba3a]/5">
-            Agendar Reunião
-            <EventAvailableIcon sx={{ fontSize: 20 }} />
-          </button>
-          <div />
+              Agendar Reunião
+              <EventAvailableIcon sx={{ fontSize: 20 }} />
+            </button>
+            <div />
             <div />
           </div>
         </div>
-        <div className="col-span-7 flex  items-center justify-center flex-col">
+        <div className="col-span-7 flex  items-center justify-center flex-col  ">
           <p className="text-lg font-normal opacity-80 mt-5 p-5 border-2 rounded-3xl border-dashed transition-all duration-300 ease-in-out hover:border-amber-600 shadow-xl hover:shadow-amber-500/10 hover:scale-105 ">
             <span className="font-bold text-amber-500">Somos</span>{" "}
             especialistas em pesquisa de mercado, empresarial e de opinião,
