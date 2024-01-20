@@ -25,7 +25,7 @@ export const Session2 = () => {
           <div className="flex flex-col justify-between">
             <div>
               <h1 className="text-5xl font-normal font-Sora w-full">
-                Quem Somos
+                Quem <span className="italic">Somos</span> 
               </h1>
               <p className="text-md font-normal opacity-80 mt-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
