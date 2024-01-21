@@ -1,4 +1,5 @@
 import { Base } from "../../Base";
+import Image1 from "../../../assets/Image1.png";
 import Image2 from "../../../assets/Image2.png";
 import Image3 from "../../../assets/Image3.png";
 import Image4 from "../../../assets/Image4.png";
@@ -36,7 +37,7 @@ export const Session3 = () => {
               <div className="overflow-hidden rounded-2xl w-full  ">
                 <img
                   className="w-full hover:scale-110 transition duration-500 cursor-pointer !object-cover rounded-t-2xl "
-                  src="https://lh6.googleusercontent.com/Kc_U4wdHPKH8EMu9H4ZQFi4ptC3hdkRrB6M6jl8yj6L7WLO11k_w82vmZrK_mCFDnpYr_d7i5aQ8xZLm3KdD4jXOXgXrAw2PK8pao4NN8lMHURs3KRGrzqdMl3cHqZHHaQ=w1280"
+                  src={Image1}
                 />
               </div>
             </div>
