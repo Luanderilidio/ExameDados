@@ -5,7 +5,7 @@ import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 
 export const Header = () => {
   return (
-    <Base className="border-b border-dashed border-white/10 relative ">
+    <Base className="border-b border-black/20 relative ">
       
       <div className="w-full grid grid-cols-12  py-2">
         <div className="col-span-12 flex items-center justify-between">
