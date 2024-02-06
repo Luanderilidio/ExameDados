@@ -27,7 +27,7 @@ export const data = [
     title: "Governo de Mato Grosso",
     subtitle: "Lorem ipsum dolor sit amet",
     image:
-      "https://lh3.googleusercontent.com/proxy/eucPNoLdUtJZGbwzALKLNUvuDxTCHZe-F1ViagyG5LYcFpZxKjnzCVdvBHYLnsUe_hVMxzc3Cs59ZLvSDyYlUZbrOMtEAlF3c8PRjsKvt_idgFHbegflAu06ahNc7oUfbIPu",
+      "https://www.leiagora.com.br/imgsite/noticias/amp-palacio(7).jpg",
   },
   {
     title: "Senac",

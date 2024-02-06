@@ -75,9 +75,13 @@ export const Session4 = () => {
               survived not only five centuries
             </p>
 
-            <button className="w-fit py-2 px-7 mt-5 flex items-center justify-center gap-2 rounded-full  border-2 border-amber-500 border-dashed hover:bg-amber-500 text-amber-500 hover:text-black font-Sora font-semibold transition ease-in-out hover:scale-110 active:scale-95 shadow-xl shadow-[#ffba3a]/5 hover:shadow-[#ffba3a]/10 active:shadow-[#ffba3a]/5">
-              Agendar Reunião
+            <button
+              // onClick={handleOpen}
+              className="w-fit py-3 px-5 mt-5 flex items-center justify-center gap-2 rounded-full  bg-amber-300 hover:bg-amber-400 text-lg text-amber-800 font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-gray-500/10 hover:shadow-gray-500/20 active:shadow-gray-500/5"
+            >
+              Agendar uma Reunião
               <EventAvailableIcon sx={{ fontSize: 20 }} />
+
             </button>
          
             <div />

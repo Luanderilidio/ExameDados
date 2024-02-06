@@ -30,7 +30,7 @@ export const Session5 = () => {
           className="absolute -right-10 opacity-30"
         />
 
-        <div className="col-span-12 flex items-center  justify-evenly h-96 rounded-3xl bg-gradient-to-r from-amber-600 via-amber-600 to-amber-500">
+        <div className="col-span-12 flex items-center  justify-evenly h-96 rounded-3xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400">
           <div className="flex gap-5">
             <div className="w-8 h-60 rounded-full shadow-lg shadow-black/30">
               <img
@@ -55,10 +55,10 @@ export const Session5 = () => {
             </div>
           </div>
           <div className=" flex items-center justify-center flex-col gap-5 !w-fit">
-            <h1 className="font-bold text-5xl text-center !w-fit ">
+            <h1 className="font-bold text-white text-5xl text-center !w-fit ">
               Fale com um especialista <br /> agora mesmo!
             </h1>
-            <h2 className="font-normal  text-xl text-center  ">
+            <h2 className="font-normal text-white text-xl text-center  ">
               Entre em contato conosco e tire todas suas dúvidas!
             </h2>
             <Link
@@ -67,14 +67,14 @@ export const Session5 = () => {
               rel="noreferrer"
               className="!text-white !no-underline"
             >
-              <button className=" flex items-center gap-2 hover:underline font-bold text-2xl bg-black rounded-full w-fit p-5 transition ease-in-out hover:scale-105 active:scale-95">
+              <button className=" flex items-center gap-2 hover:underline font-bold text-lg bg-black rounded-full w-fit p-5 transition ease-in-out hover:scale-105 active:scale-95">
                 <MailIcon />
                 <p>institutoexatadados@gmail.com</p>
                 <SendIcon />
               </button>
             </Link>
             <div className="flex gap-4 font-Sora">
-              <button className="py-5 px-7 flex items-center justify-center gap-2 rounded-full  bg-white text-2xl text-black font-bold transition ease-in-out hover:scale-105 active:scale-95 ">
+              <button className="py-3 px-5 flex items-center justify-center gap-2 rounded-full  bg-white text-lg text-black font-bold transition ease-in-out hover:scale-105 active:scale-95 ">
                 <EventAvailableIcon sx={{ fontSize: 30 }} /> Agendar Reunião
               </button>
               <Link
@@ -83,7 +83,7 @@ export const Session5 = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="py-5 px-7 flex items-center justify-center gap-2 rounded-full bg-green-500 hover:bg-green-400 text-2xl text-black font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-green-500/10 hover:shadow-green-500/30 active:shadow-green-500/10">
+                <button className="py-3 px-5 flex items-center justify-center gap-2 rounded-full bg-green-500 hover:bg-green-400 text-lg text-black font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-green-500/10 hover:shadow-green-500/30 active:shadow-green-500/10">
                   <WhatsAppIcon sx={{ fontSize: 30 }} /> Fale Conosco
                 </button>
               </Link>

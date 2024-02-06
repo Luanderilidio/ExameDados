@@ -6,7 +6,7 @@ import Image4 from "../../../assets/Image4.png";
 import Ilustration6 from "../../../assets/Ilustration6.svg";
 import Ilustration7 from "../../../assets/Ilustration7.svg";
 import Ilustration8 from "../../../assets/Ilustration8.png";
-import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 
 export const Session3 = () => {
   return (
@@ -24,16 +24,28 @@ export const Session3 = () => {
         />
         <div className="col-span-12">
           <h1 className="text-5xl font-normal font-Sora w-full text-center">
-            Nossas áreas de{" "}
-            <span className="italic font-bold underline">Atuação</span>
+            Atuamos nas principais {" "}
+            <span className="italic font-bold underline text-amber-500">Frentes</span>
           </h1>
         </div>
         <div className="col-span-6 flex flex-col justify-between">
           <div className="flex gap-5">
             <div className="rounded-t-2xl relative">
-              <img src={Ilustration8} className="absolute -right-3 -top-3" alt="" />
-              <img src={Ilustration8} className="absolute -left-3 -bottom-3 rotate-180" alt="" />
+              <img
+                src={Ilustration8}
+                className="absolute -right-3 -top-3"
+                alt=""
+              />
+              <img
+                src={Ilustration8}
+                className="absolute -left-3 -bottom-3 rotate-180"
+                alt=""
+              />
 
+              <div className="px-2 py-1 flex gap-1 items-center rounded-md absolute -bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fa1818] text-[#ffffff] shadow-sm shadow-[#fa1818]/50  bg-opacity-40 backdrop-filter backdrop-blur-lg !z-50">
+                <LocalFireDepartmentIcon sx={{ fontSize: 15 }} />
+                <p className="text-sm font-Sora ">Em alta</p>
+              </div>
               <div className="overflow-hidden rounded-2xl w-full  ">
                 <img
                   className="w-full hover:scale-110 transition duration-500 cursor-pointer !object-cover rounded-t-2xl "
@@ -62,8 +74,16 @@ export const Session3 = () => {
           </div>
           <div className="flex gap-5">
             <div className="rounded-t-2xl relative">
-              <img src={Ilustration8} className="absolute -right-3 -top-3" alt="" />
-              <img src={Ilustration8} className="absolute -left-3 -bottom-3 rotate-180" alt="" />
+              <img
+                src={Ilustration8}
+                className="absolute -right-3 -top-3"
+                alt=""
+              />
+              <img
+                src={Ilustration8}
+                className="absolute -left-3 -bottom-3 rotate-180"
+                alt=""
+              />
               <div className="overflow-hidden rounded-2xl w-full  ">
                 <img
                   className="w-full hover:scale-110 transition duration-500 cursor-pointer !object-cover rounded-t-2xl "
@@ -94,8 +114,16 @@ export const Session3 = () => {
         <div className="col-span-6 flex flex-col justify-between">
           <div className="flex gap-5">
             <div className="rounded-t-2xl relative">
-              <img src={Ilustration8} className="absolute -right-3 -top-3" alt="" />
-              <img src={Ilustration8} className="absolute -left-3 -bottom-3 rotate-180" alt="" />
+              <img
+                src={Ilustration8}
+                className="absolute -right-3 -top-3"
+                alt=""
+              />
+              <img
+                src={Ilustration8}
+                className="absolute -left-3 -bottom-3 rotate-180"
+                alt=""
+              />
               <div className="overflow-hidden rounded-2xl w-full  ">
                 <img
                   className="w-full hover:scale-110 transition duration-500 cursor-pointer !object-cover rounded-t-2xl "
@@ -106,10 +134,9 @@ export const Session3 = () => {
             <div className="flex flex-col justify-start gap-3">
               <h1 className="text-3xl font-bold">
                 <span className="text-5xl font-light underline text-amber-500">
-                M
+                  M
                 </span>
                 ercado
-
               </h1>
               <p className="font-light">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
@@ -125,8 +152,16 @@ export const Session3 = () => {
           </div>
           <div className="flex gap-5">
             <div className="rounded-t-2xl relative">
-              <img src={Ilustration8} className="absolute -right-3 -top-3" alt="" />
-              <img src={Ilustration8} className="absolute -left-3 -bottom-3 rotate-180" alt="" />
+              <img
+                src={Ilustration8}
+                className="absolute -right-3 -top-3"
+                alt=""
+              />
+              <img
+                src={Ilustration8}
+                className="absolute -left-3 -bottom-3 rotate-180"
+                alt=""
+              />
               <div className="overflow-hidden rounded-2xl w-full  ">
                 <img
                   className="w-full hover:scale-110 transition duration-500 cursor-pointer !object-cover rounded-t-2xl "
