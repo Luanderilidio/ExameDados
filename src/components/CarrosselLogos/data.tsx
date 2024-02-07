@@ -31,4 +31,8 @@ export const data = [
     id: 6,
     image: Logo6,
   },
+  {
+    id: 7,
+    image: Logo7,
+  },
 ];

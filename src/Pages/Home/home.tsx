@@ -18,7 +18,7 @@ export default function Home() {
     >
       <Header />
       <Session1 />
-      {/* <CarroselLogos /> */}
+      <CarroselLogos />
       <Session2 />
       <Session3 />
       <Session4 />

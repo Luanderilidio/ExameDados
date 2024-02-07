@@ -11,6 +11,7 @@ export function CarroselLogos() {
     <div className="w-full col-span-12">
       <Swiper
         spaceBetween={0}
+        loop
         slidesPerView={6}
         // pagination={{
         //   dynamicBullets: false,
@@ -26,7 +27,7 @@ export function CarroselLogos() {
       >
         {data.map((item: any, index): any => (
           <SwiperSlide className="bg-transparent p-3 w-36 flex !items-center justify-center h-full">
-            <img src={item.image} alt="" className="!w-36 flex items-center justify-center" />
+            <img src={item.image} alt="" className="!w-36 flex items-center justify-center rounded-lg drop-shadow-lg" />
           </SwiperSlide>
         ))}
       </Swiper>
