@@ -8,7 +8,7 @@ import { data } from "./data";
 
 export function CarroselLogos() {
   return (
-    <div className="w-full col-span-12">
+    <div className="w-full col-span-12 mb-20">
       <Swiper
         spaceBetween={0}
         loop
