@@ -1,7 +1,11 @@
 import { Base } from "../../Base";
-import ImageMan3 from "../../../assets/ImageMan3.png";
+import ImageMan3 from "../../../assets/imageMan3.png";
 import Ilustration6 from "../../../assets/Ilustration6.svg";
 import Ilustration7 from "../../../assets/Ilustration7.svg";
+
+import Cardizin4 from '../../../assets/Cardzin4.svg'
+import Cardizin5 from '../../../assets/Cardzin5.svg'
+import Cardizin6 from '../../../assets/Cardzin6.svg'
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 
 export const Session2 = () => {
@@ -34,8 +38,12 @@ export const Session2 = () => {
                 survived not only five centuries
               </p>
             </div>
-            <img src={ImageMan3} alt="" className=" w-full" />
+            <div className="relative flex flex-col items-center ">
 
+            <img src={ImageMan3} alt="" className="" />
+            <img src={Cardizin4} alt="" className=" w-32 absolute top-0 left-0" />
+            <img src={Cardizin5} alt="" className=" w-24 absolute left-0 bottom-10" />
+            <img src={Cardizin6} alt="" className=" w-28 absolute top-0 right-5" />
             <button
               // onClick={handleOpen}
               className="w-fit py-3 px-5  flex items-center justify-center gap-2 rounded-full  bg-amber-300 hover:bg-amber-400 text-lg text-amber-800 font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-gray-500/10 hover:shadow-gray-500/20 active:shadow-gray-500/5"
@@ -44,6 +52,8 @@ export const Session2 = () => {
               <EventAvailableIcon sx={{ fontSize: 20 }} />
 
             </button>
+            </div>
+
             
             <div />
             <div />

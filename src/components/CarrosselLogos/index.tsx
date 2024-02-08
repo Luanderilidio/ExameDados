@@ -27,7 +27,7 @@ export function CarroselLogos() {
       >
         {data.map((item: any, index): any => (
           <SwiperSlide className="bg-transparent p-3 w-36 flex !items-center justify-center h-full">
-            <img src={item.image} alt="" className="!w-36 flex items-center justify-center rounded-lg drop-shadow-lg" />
+            <img src={item.image} alt="" className="!w-36 flex items-center justify-center rounded-md drop-shadow-lg" />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -65,7 +65,7 @@ export const Session4 = () => {
 
           <div className="flex flex-col justify-start items-end">
             <h1 className="text-5xl font-normal font-Sora w-full text-right">
-              <span className="text-amber-500">Quem</span> são <br /> nossos <span className="italic">Clientes</span>
+              <span className="text-amber-500 font-bold">Nossos</span> cases <br /> de <span className="italic underline">Sucesso</span>
             </h1>
             <p className="text-md font-normal text-right opacity-80 mt-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting

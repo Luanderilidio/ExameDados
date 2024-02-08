@@ -12,7 +12,8 @@ import Ilustration10 from "../../../assets/Ilustration10.png";
 import ImageMan from "../../../assets/imageMan2.png";
 import Cardzin1 from "../../../assets/Cardzin1.png";
 import Cardzin2 from "../../../assets/Cardzin2.png";
-import Cardzin3 from "../../../assets/Cardzin3.png";
+import Cardzin3 from "../../../assets/Cardzin3.svg";
+import Cardzin5 from "../../../assets/Cardzin7.svg";
 import { Box, Dialog, Link, Modal, Typography } from "@mui/material";
 import { styleModal } from "../../../utils/StyleModal";
 import { RadarChart } from "../../Charts/RadarChart";
@@ -108,6 +109,11 @@ export const Session1 = () => {
             src={Cardzin3}
             alt=""
             className="rounded-md drop-shadow absolute bottom-20 right-0"
+          />
+          <img
+            src={Cardzin5}
+            alt=""
+            className="w-28 rounded-md drop-shadow absolute bottom-20 left-10"
           />
           <img
             src={Ilustration10}

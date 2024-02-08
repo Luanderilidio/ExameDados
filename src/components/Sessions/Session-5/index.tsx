@@ -32,23 +32,23 @@ export const Session5 = () => {
 
         <div className="col-span-12 flex items-center  justify-evenly h-96 rounded-3xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400">
           <div className="flex gap-5">
-            <div className="w-8 h-60 rounded-full shadow-lg shadow-black/30">
+          <div className="w-8 h-60 rounded-full shadow-lg shadow-black/30">
               <img
-                src="https://img.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css-com-pessoa_23-2150061993.jpg?w=740&t=st=1705934778~exp=1705935378~hmac=b270a23aa6f292bd39663ca8b679f5624d6e4930448f4a2e018d6609610d13d7"
+                src="https://img.freepik.com/fotos-gratis/conexao-de-rede-de-internet-de-negocios-globais-iot-internet-das-coisas-conceito-de-inteligencia-de-negocios-rede-global-de-negocios-fundo-de-tecnologia-futurista-ai-generative_1258-176775.jpg?w=740&t=st=1705934858~exp=1705935458~hmac=98bd3bd8f4350296678ea8a11c506c51a38f4275e62e51a68b161bd56f9edbe7"
                 alt=""
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
             <div className="w-8 h-60 rounded-full mt-7">
               <img
-                src="https://img.freepik.com/fotos-gratis/sala-de-hub-de-racks-de-servidor-de-dados-com-centro-de-computacao-de-big-data-interior-azul-para-hospedar-hardware-de-armazenamento_90220-1033.jpg?w=360&t=st=1705934810~exp=1705935410~hmac=9454c21f68d40b1f6ecceb49c289e79ae0334b63dd4c2bfe9fefbe0fbf83b3d7"
+                src="https://img.freepik.com/fotos-gratis/homem-usando-um-tablet-para-trabalhar-e-se-conectar-com-outras-pessoas_23-2149369110.jpg?w=740&t=st=1705934724~exp=1705935324~hmac=822145d765f8d04f025dee5a0bb1b4c45fccaad9840904e74abd99f09727781e"
                 alt=""
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
             <div className="w-8 h-60 rounded-full shadow-lg shadow-black/30">
               <img
-                src="https://img.freepik.com/fotos-gratis/tela-do-projetor-de-holograma-com-tecnologia-de-sistema-em-nuvem_53876-108502.jpg?w=740&t=st=1705934830~exp=1705935430~hmac=adb2769abba0eccb118fc5d261f85746c2680724413bd8005f10d2f0f9d1cc53"
+                src="https://img.freepik.com/fotos-gratis/pesquisador-usando-uma-tecnologia-futurista-de-tela-de-tablet-digital-transparente_53876-101147.jpg?w=740&t=st=1705934761~exp=1705935361~hmac=fc6e7e2f0fd8229d047924ef4a719f75e851c312795fd35aaf1f979775cdd7fe"
                 alt=""
                 className="w-full h-full object-cover rounded-full"
               />
