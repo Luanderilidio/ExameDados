@@ -15,12 +15,12 @@ export const Session2 = () => {
         <img
           src={Ilustration6}
           alt=""
-          className="absolute -left-10 opacity-30"
+          className="absolute -left-10 "
         />
         <img
           src={Ilustration7}
           alt=""
-          className="absolute right-0 w-48 top-10 opacity-30"
+          className="absolute right-0 w-48 top-1"
         />
 
         <div className="col-span-5  flex gap-3 ">

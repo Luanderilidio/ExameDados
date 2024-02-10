@@ -3,7 +3,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import { Base } from "../../Base";
 import Ilustration5 from "../../../assets/Ilustration5.svg";
 import Ilustration6 from "../../../assets/Ilustration6.svg";
-import Ilustration7 from "../../../assets/Ilustration7.svg";
+import Ilustration9 from "../../../assets/Ilustration9.svg";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import { CardCase } from "../../CardCase";
 
@@ -20,19 +20,15 @@ export const Session4 = () => {
         <img
           src={Ilustration6}
           alt=""
-          className="absolute -left-10 opacity-30"
+          className="absolute -left-10 "
         />
         <img
           src={Background}
           alt=""
-          className="absolute -left-10 opacity-30 rotate-180" 
+          className="absolute -left-10  rotate-180" 
         />
 
-        <img
-          src={Ilustration7}
-          alt=""
-          className="absolute left-0 w-48 top-10 opacity-30"
-        />
+
         <div className="col-span-7 ">
           <Swiper
             spaceBetween={0}

@@ -1,4 +1,6 @@
 import { Base } from "../../Base";
+
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Image1 from "../../../assets/Image1.png";
 import Image2 from "../../../assets/Image2.png";
 import Image3 from "../../../assets/Image3.png";
@@ -15,7 +17,7 @@ export const Session3 = () => {
         <img
           src={Ilustration6}
           alt=""
-          className="absolute -right-10 opacity-30"
+          className="absolute -right-10 "
         />
         <img
           src={Ilustration7}
@@ -66,10 +68,10 @@ export const Session3 = () => {
                 voluptatibus a saepe unde laborum sunt consequatur harum
                 consectetur odio. Nemo vitae quos eius.
               </p>
-              <button className="w-fit font-bold text-sm  text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
-                Saiba Mais
-                {/* <EventAvailableIcon sx={{ fontSize: 20 }} /> */}
-              </button>
+              <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
+          Saiba Mais
+          <ChevronRightIcon sx={{ fontSize: 20 }} />
+        </button>
             </div>
           </div>
           <div className="flex gap-5">
@@ -104,10 +106,10 @@ export const Session3 = () => {
                 voluptatibus a saepe unde laborum sunt consequatur harum
                 consectetur odio. Nemo vitae quos eius.
               </p>
-              <button className="w-fit font-bold text-sm  text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
-                Saiba Mais
-                {/* <EventAvailableIcon sx={{ fontSize: 20 }} /> */}
-              </button>
+              <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
+          Saiba Mais
+          <ChevronRightIcon sx={{ fontSize: 20 }} />
+        </button>
             </div>
           </div>
         </div>
@@ -144,10 +146,10 @@ export const Session3 = () => {
                 voluptatibus a saepe unde laborum sunt consequatur harum
                 consectetur odio. Nemo vitae quos eius.
               </p>
-              <button className="w-fit font-bold text-sm  text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
-                Saiba Mais
-                {/* <EventAvailableIcon sx={{ fontSize: 20 }} /> */}
-              </button>
+              <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
+          Saiba Mais
+          <ChevronRightIcon sx={{ fontSize: 20 }} />
+        </button>
             </div>
           </div>
           <div className="flex gap-5">
@@ -182,10 +184,10 @@ export const Session3 = () => {
                 voluptatibus a saepe unde laborum sunt consequatur harum
                 consectetur odio. Nemo vitae quos eius.
               </p>
-              <button className="w-fit font-bold text-sm  text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
-                Saiba Mais
-                {/* <EventAvailableIcon sx={{ fontSize: 20 }} /> */}
-              </button>
+              <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
+          Saiba Mais
+          <ChevronRightIcon sx={{ fontSize: 20 }} />
+        </button>
             </div>
           </div>
         </div>

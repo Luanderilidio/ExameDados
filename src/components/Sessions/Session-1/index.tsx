@@ -91,9 +91,9 @@ export const Session1 = () => {
             onClick={handleOpen}
             className="py-3 px-5 w-full flex items-center justify-start gap-2 rounded-full  bg-amber-400 hover:bg-amber-500 text-lg text-black font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-[#ffba3a]/10 hover:shadow-[#ffba3a]/20 active:shadow-[#ffba3a]/5"
           >
-            <p className="!whitespace-no-wrap">Assista o vídeo</p>
-            <PlayCircleOutlineIcon sx={{ fontSize: 30 }} />
-            <div className="w-8/12 h-[1px] bg-black" />
+            <p className="!whitespace-no-wrap text-amber-800 ">Assista o vídeo</p>
+            <PlayCircleOutlineIcon sx={{ fontSize: 30, color: '#9a3412'}} />
+            <div className="w-8/12 h-[1px] bg-amber-800" />
           </button>
           <img
             src={Cardzin1}
