@@ -1,6 +1,6 @@
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-import InfoIcon from '@mui/icons-material/Info';
+import InfoIcon from "@mui/icons-material/Info";
 import { useState } from "react";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Base } from "../../Base";
@@ -9,6 +9,10 @@ import Ilustration1 from "../../../assets/Ilustration1.svg";
 import Ilustration2 from "../../../assets/Ilustration2.svg";
 import Ilustration3 from "../../../assets/Ilustration3.svg";
 import Ilustration10 from "../../../assets/Ilustration10.png";
+import Ilustration12 from "../../../assets/Ilustration12.png";
+import Ilustration13 from "../../../assets/Ilustration13.png";
+import Ilustration14 from "../../../assets/Ilustration14.png";
+import Ilustration15 from "../../../assets/Ilustration15.png";
 import ImageMan from "../../../assets/imageMan2.png";
 import Cardzin1 from "../../../assets/Cardzin1.png";
 import Cardzin2 from "../../../assets/Cardzin2.png";
@@ -27,7 +31,7 @@ export const Session1 = () => {
 
   return (
     <Base>
-      <div className="h-screen grid grid-cols-12 relative">
+      <div className="h-screen grid grid-cols-12 relative p-4">
         {/* <img
           src={Ilustration1}
           alt=""
@@ -49,8 +53,8 @@ export const Session1 = () => {
           className="absolute left-20 bottom-36 w-32 opacity-30"
         /> */}
 
-        <div className="col-span-6 flex flex-col items-start justify-center gap-4">
-          <h1 className="font-Sora font-semibold text-left text-5xl ">
+        <div className="col-span-12 sm:col-span-6 flex flex-col items-start justify-center gap-4">
+          <h1 className="font-Sora font-semibold text-center sm:text-left text-2xl sm:text-5xl ">
             {/* <span className="font-normal italic">
               <span className="text-9xl">F</span>ortalecendo
             </span>{" "}
@@ -59,10 +63,11 @@ export const Session1 = () => {
               Idéia
             </span>{" "}
             com <span className="font-black">Ciência de Dados</span> */}
-           Você já se questionou sobre o que seus clientes realmente pensam sobre a sua empresa?
+            Você já se questionou sobre o que seus clientes realmente pensam
+            sobre a sua empresa?
           </h1>
 
-          <div className="flex gap-4 font-Sora">
+          <div className="hidden sm:flex gap-4 font-Sora">
             <button
               // onClick={handleOpen}
               className="py-3 px-5  flex items-center justify-center gap-2 rounded-full  bg-gray-300 hover:bg-gray-200 text-lg text-gray-700 font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-gray-500/10 hover:shadow-gray-500/20 active:shadow-gray-500/5"
@@ -81,47 +86,76 @@ export const Session1 = () => {
             </Link>
           </div>
         </div>
-        <div className="col-span-6 flex flex-col items-center justify-end relative">
+        <div className="col-span-12 sm:col-span-6 flex flex-col items-center justify-end relative ">
           <img
             src={ImageMan}
             alt=""
-            className="rounded-md drop-shadow w-11/12"
+            className="rounded-md drop-shadow w-9/12 sm:w-11/12"
           />
           <button
             onClick={handleOpen}
             className="py-3 px-5 w-full flex items-center justify-start gap-2 rounded-full  bg-amber-400 hover:bg-amber-500 text-lg text-black font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-[#ffba3a]/10 hover:shadow-[#ffba3a]/20 active:shadow-[#ffba3a]/5"
           >
-            <p className="!whitespace-no-wrap text-amber-800 ">Assista o vídeo</p>
-            <PlayCircleOutlineIcon sx={{ fontSize: 30, color: '#9a3412'}} />
-            <div className="w-8/12 h-[1px] bg-amber-800" />
+            <p className="!whitespace-no-wrap text-amber-800 text-sm">
+              Assista o vídeo
+            </p>
+            <PlayCircleOutlineIcon sx={{ fontSize: 30, color: "#9a3412" }} />
+            <div className=" w-6/12 sm:w-8/12 h-[1px] bg-amber-800" />
           </button>
           <img
             src={Cardzin1}
             alt=""
-            className="rounded-md drop-shadow absolute top-10 right-0"
+            className="w-20 sm:w-28 rounded-md drop-shadow absolute top-3 sm:top-10 right-0"
           />
           <img
             src={Cardzin2}
             alt=""
-            className="rounded-md drop-shadow absolute bottom-52 left-0"
+            className="w-20 sm:w-22 rounded-md drop-shadow absolute bottom-52 left-0"
           />
           <img
             src={Cardzin3}
             alt=""
-            className="rounded-md drop-shadow absolute bottom-20 right-0"
+            className="w-40 rounded-md drop-shadow absolute bottom-20 right-0"
           />
           <img
             src={Cardzin5}
             alt=""
-            className="w-28 rounded-md drop-shadow absolute bottom-20 left-10"
+            className="w-28 rounded-md drop-shadow absolute bottom-20 left-5 sm:left-10"
           />
           <img
             src={Ilustration10}
             alt=""
-            className="rounded-md drop-shadow absolute -bottom-10 right-0 -z-10"
+            className=" rounded-md drop-shadow absolute -bottom-10 right-0 -z-10"
           />
         </div>
-        <div className="col-span-12 mt-5">
+        <div className="sm:hidden col-span-12 grid grid-cols-2  gap-4 mt-5">
+          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-400">
+            <img src={Ilustration12} className="w-9" />
+            <p className="text-xl text-amber-800 font-semibold leading-none">
+              Conhecimento <br /> é poder
+            </p>
+          </div>
+          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-400">
+            <img src={Ilustration13} className="w-9" />
+            <p className="text-xl text-amber-800 font-semibold leading-none">
+              Informação é libertadora
+            </p>
+          </div>
+          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-400">
+            <img src={Ilustration15} className="w-9" />
+            <p className="text-xl text-amber-800 font-semibold leading-none">
+              A pesquisa é o caminho
+            </p>
+          </div>
+          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-400">
+            <img src={Ilustration14} className="w-9" />
+            <p className="text-xl text-amber-800 font-semibold leading-none">
+              A educação é a chave
+            </p>
+          </div>
+        </div>
+
+        <div className="hidden sm:block col-span-12 mt-5">
           <h1 className="font-normal text-center text-2xl">
             <span>
               <FiberManualRecordIcon
@@ -141,23 +175,21 @@ export const Session1 = () => {
               <FiberManualRecordIcon
                 className="text-amber-500"
                 sx={{ fontSize: 12 }}
-              />
+              />{" "}
+                A pesquisa é o caminho{" "}
             </span>{" "}
-            A educação é a chave{" "}
             <span>
               <FiberManualRecordIcon
                 className="text-amber-500"
                 sx={{ fontSize: 12 }}
               />
             </span>{" "}
-            A pesquisa é o caminho{" "}
+            A educação é a chave
           </h1>
         </div>
-        <div className="col-span-12 mt-5">
-          
-        </div>
+        <div className="col-span-12 mt-5"></div>
       </div>
- 
+
       <Dialog
         maxWidth="lg"
         sx={{ borderRadius: 24 }}

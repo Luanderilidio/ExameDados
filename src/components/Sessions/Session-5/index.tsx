@@ -23,7 +23,7 @@ import { Link } from "@mui/material";
 export const Session5 = () => {
   return (
     <Base>
-      <div className="grid grid-cols-12 gap-10 relative !font-Sora">
+      <div className="grid grid-cols-12 gap-10 relative !font-Sora mb-10">
         <img
           src={Ilustration6}
           alt=""

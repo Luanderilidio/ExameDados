@@ -8,6 +8,7 @@ import { Session3 } from "../../components/Sessions/Session-3";
 import { Session4 } from "../../components/Sessions/Session-4";
 import { Session5 } from "../../components/Sessions/Session-5";
 import { CarroselLogos } from "../../components/CarrosselLogos";
+import { Footer } from "../../components/Footer";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Session3 />
       <Session4 />
       <Session5 />
+      <Footer />
     </div>
   );
 }
