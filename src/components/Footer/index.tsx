@@ -3,7 +3,7 @@ import Logo from "../../assets/ExameDadosLogo.svg";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900">
+    <footer className="hidden sm:grid bg-gray-900">
       <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>

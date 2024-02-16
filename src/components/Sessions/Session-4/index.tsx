@@ -16,7 +16,7 @@ import Background from  "../../../assets/Ilustration9.svg"
 export const Session4 = () => {
   return (
     <Base>
-      <div className="h-screen grid grid-cols-12 gap-10 relative !font-Sora">
+      <div className="h-screen hidden sm:grid grid-cols-12 gap-10 relative !font-Sora">
         <img
           src={Ilustration6}
           alt=""

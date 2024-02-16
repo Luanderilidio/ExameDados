@@ -13,26 +13,28 @@ import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 export const Session3 = () => {
   return (
     <Base>
-      <div className="h-screen grid grid-cols-12 gap-10 relative !font-Sora">
+      <div className="h-screen grid grid-cols-2 gap-10 relative !font-Sora px-4 sm:px-0 mt-20">
         <img
           src={Ilustration6}
           alt=""
-          className="absolute -right-10 "
+          className="absolute -left-10 hidden sm:block"
         />
         <img
           src={Ilustration7}
           alt=""
-          className="hidden absolute right-0 w-48 top-10 opacity-30"
+          className=" absolute right-0 w-48 top-10 hidden sm:block"
         />
-        <div className="col-span-12">
-          <h1 className="text-5xl font-normal font-Sora w-full text-center">
-            Atuamos nas principais {" "}
-            <span className="italic font-bold underline text-amber-500">Frentes</span>
+        <div className="col-span-2">
+          <h1 className="text-3xl sm:text-5xl font-normal font-Sora text-center ">
+            Atuamos nas <br /> principais
+            <span className="italic font-bold underline text-amber-500">
+              Frentes
+            </span>
           </h1>
         </div>
-        <div className="col-span-6 flex flex-col justify-between">
-          <div className="flex gap-5">
-            <div className="rounded-t-2xl relative">
+        <div className="col-span-2 sm:col-span-1 flex flex-col justify-between gap-10">
+          <div className="flex flex-col sm:flex-row gap-5 ">
+            <div className="rounded-t-2xl relative ">
               <img
                 src={Ilustration8}
                 className="absolute -right-3 -top-3"
@@ -50,7 +52,7 @@ export const Session3 = () => {
               </div>
               <div className="overflow-hidden rounded-2xl w-full  ">
                 <img
-                  className="w-full hover:scale-110 transition duration-500 cursor-pointer !object-cover rounded-t-2xl "
+                  className=" w-full hover:scale-110 transition duration-500 cursor-pointer !object-cover rounded-t-2xl "
                   src={Image1}
                 />
               </div>
@@ -68,13 +70,15 @@ export const Session3 = () => {
                 voluptatibus a saepe unde laborum sunt consequatur harum
                 consectetur odio. Nemo vitae quos eius.
               </p>
-              <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
-          Saiba Mais
-          <ChevronRightIcon sx={{ fontSize: 20 }} />
-        </button>
+              <div className="flex items-center justify-end">
+                <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
+                  Saiba Mais
+                  <ChevronRightIcon sx={{ fontSize: 20 }} />
+                </button>
+              </div>
             </div>
           </div>
-          <div className="flex gap-5">
+          <div className="flex flex-col sm:flex-row  gap-5">
             <div className="rounded-t-2xl relative">
               <img
                 src={Ilustration8}
@@ -106,15 +110,17 @@ export const Session3 = () => {
                 voluptatibus a saepe unde laborum sunt consequatur harum
                 consectetur odio. Nemo vitae quos eius.
               </p>
-              <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
-          Saiba Mais
-          <ChevronRightIcon sx={{ fontSize: 20 }} />
-        </button>
+              <div className="flex items-center justify-end">
+                <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
+                  Saiba Mais
+                  <ChevronRightIcon sx={{ fontSize: 20 }} />
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div className="col-span-6 flex flex-col justify-between">
-          <div className="flex gap-5">
+        <div className="col-span-2 sm:col-span-1 flex flex-col justify-between gap-10">
+          <div className="flex flex-col sm:flex-row gap-5">
             <div className="rounded-t-2xl relative">
               <img
                 src={Ilustration8}
@@ -146,13 +152,15 @@ export const Session3 = () => {
                 voluptatibus a saepe unde laborum sunt consequatur harum
                 consectetur odio. Nemo vitae quos eius.
               </p>
-              <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
-          Saiba Mais
-          <ChevronRightIcon sx={{ fontSize: 20 }} />
-        </button>
+              <div className="flex items-center justify-end">
+                <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
+                  Saiba Mais
+                  <ChevronRightIcon sx={{ fontSize: 20 }} />
+                </button>
+              </div>
             </div>
           </div>
-          <div className="flex gap-5">
+          <div className="flex flex-col sm:flex-row gap-5">
             <div className="rounded-t-2xl relative">
               <img
                 src={Ilustration8}
@@ -184,10 +192,12 @@ export const Session3 = () => {
                 voluptatibus a saepe unde laborum sunt consequatur harum
                 consectetur odio. Nemo vitae quos eius.
               </p>
-              <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
-          Saiba Mais
-          <ChevronRightIcon sx={{ fontSize: 20 }} />
-        </button>
+              <div className="flex items-center justify-end">
+                <button className="w-fit font-bold text-sm flex items-center justify-end text-amber-600 transition ease-in-out hover:scale-110 active:scale-95">
+                  Saiba Mais
+                  <ChevronRightIcon sx={{ fontSize: 20 }} />
+                </button>
+              </div>
             </div>
           </div>
         </div>

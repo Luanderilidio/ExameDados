@@ -129,25 +129,25 @@ export const Session1 = () => {
           />
         </div>
         <div className="sm:hidden col-span-12 grid grid-cols-2  gap-4 mt-5">
-          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-400">
+          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-300">
             <img src={Ilustration12} className="w-9" />
             <p className="text-xl text-amber-800 font-semibold leading-none">
               Conhecimento <br /> é poder
             </p>
           </div>
-          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-400">
+          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-300">
             <img src={Ilustration13} className="w-9" />
             <p className="text-xl text-amber-800 font-semibold leading-none">
               Informação é libertadora
             </p>
           </div>
-          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-400">
+          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-300">
             <img src={Ilustration15} className="w-9" />
             <p className="text-xl text-amber-800 font-semibold leading-none">
               A pesquisa é o caminho
             </p>
           </div>
-          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-400">
+          <div className="flex flex-col items-start justify-center gap-2 p-3 rounded-xl bg-amber-300">
             <img src={Ilustration14} className="w-9" />
             <p className="text-xl text-amber-800 font-semibold leading-none">
               A educação é a chave
