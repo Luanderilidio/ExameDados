@@ -18,10 +18,10 @@ export default function Home() {
       // style={{ backgroundImage: `url(${Background})` }}
     >
       <Header />
-      <Session1 />
-      <CarroselLogos />
+      {/* <Session1 /> */}
+      {/* <CarroselLogos /> */}
       <Session2 />
-      <Session3 />
+        <Session3 />
       <Session4 />
       <Session5 />
       <Footer />
