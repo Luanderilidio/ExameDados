@@ -13,7 +13,7 @@ import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 export const Session3 = () => {
   return (
     <Base>
-      <div className="h-full sm:h-screen grid grid-cols-2 gap-10 relative !font-Sora px-4 sm:px-0 mt-10">
+      <div className="h-full sm:h-screen grid grid-cols-2 gap-10 relative !font-Sora px-4 sm:px-0 mt-20">
         <img
           src={Ilustration6}
           alt=""

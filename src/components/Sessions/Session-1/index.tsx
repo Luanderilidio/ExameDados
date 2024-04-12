@@ -31,7 +31,7 @@ export const Session1 = () => {
 
   return (
     <Base>
-      <div className="h-screen grid grid-cols-12 relative p-4">
+      <div className="h-screen grid grid-cols-12 relative p-4 ">
         {/* <img
           src={Ilustration1}
           alt=""

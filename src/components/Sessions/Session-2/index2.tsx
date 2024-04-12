@@ -11,7 +11,7 @@ import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 export const Session2 = () => {
   return (
     <Base>
-      <div className="grid grid-cols-2 gap-10 relative !font-Sora p-4 sm:p-0">
+      <div className="grid grid-cols-2 gap-10 relative !font-Sora p-4 sm:p-0 mt-20">
       <img
           src={Ilustration6}
           alt=""
