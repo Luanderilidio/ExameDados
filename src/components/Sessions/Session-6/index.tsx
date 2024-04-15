@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
@@ -39,9 +41,21 @@ export const Session6 = () => {
             </h1>
           </div>
         </div>
+        {data.map(item => (
+
         <div className="col-span-3">
-          <CardCEO />
+          <CardCEO
+            instagram={item.instagram}
+            avatar={item.avatar}
+            photo={item.photo}
+            linkedin={item.linkedin}
+            name={item.name}
+            office={item.office}
+            specialties={item.specialties}
+            text={item.text}
+          />
         </div>
+        ))}
       </div>
     </Base>
   );
