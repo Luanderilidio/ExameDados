@@ -56,6 +56,7 @@ export const Session4 = () => {
                   image={item.image}
                   title={item.title}
                   subtitle={item.subtitle}
+                  content={item.content}
                 />
               </SwiperSlide>
             ))}
@@ -113,6 +114,7 @@ export const Session4 = () => {
                   image={item.image}
                   title={item.title}
                   subtitle={item.subtitle}
+                  content={item.content}
                 />
               </SwiperSlide>
             ))}

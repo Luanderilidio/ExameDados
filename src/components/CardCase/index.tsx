@@ -16,9 +16,10 @@ interface PropsCase {
   image: string;
   title: string;
   subtitle: string;
+  content: React.ReactNode
 }
 
-export const CardCase = ({ image, title, subtitle }: PropsCase) => {
+export const CardCase = ({ image, title, subtitle, content }: PropsCase) => {
 
   const [currentValue1, setTrue1, setFalse1, toggleValue1] = useBoolean(false);
 
@@ -50,7 +51,7 @@ export const CardCase = ({ image, title, subtitle }: PropsCase) => {
         open={currentValue1}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Política
+          {title}
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -65,23 +66,7 @@ export const CardCase = ({ image, title, subtitle }: PropsCase) => {
           <CloseIcon />
         </IconButton>
         <DialogContent dividers>
-          <Typography gutterBottom>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
-          </Typography>
-          <br />
-          <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor.
-          </Typography>
-          <br />
-          <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-            dui. Donec ullamcorper nulla non metus auctor fringilla.
-          </Typography>
+         {content}
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={setFalse1}>
