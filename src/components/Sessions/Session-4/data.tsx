@@ -1,4 +1,11 @@
 import { Typography } from "@mui/material";
+import Logo1 from "../../../assets/Logos/1.png";
+import Logo2 from "../../../assets/Logos/2.png";
+import Logo3 from "../../../assets/Logos/3.png";
+import Logo4 from "../../../assets/Logos/4.png";
+import Logo5 from "../../../assets/Logos/5.png";
+import Logo6 from "../../../assets/Logos/6.png";
+import Logo7 from "../../../assets/Logos/7.png";
 
 export const data = [
   {
@@ -6,6 +13,7 @@ export const data = [
     subtitle: "Lorem ipsum dolor sit amet",
     image:
       "https://areferencia.com/wp-content/uploads/2021/07/china-praca-tiananmen-1024x683.jpg",
+    brand: Logo7,
     content: (
       <>
         <Typography gutterBottom>
@@ -32,6 +40,7 @@ export const data = [
     subtitle: "Lorem ipsum dolor sit amet",
     image:
       "https://s1.static.brasilescola.uol.com.br/be/conteudo/images/kremlin-sede-governo-casa-presidente-russo-sua-construcao-foi-iniciada-em-1156-por-ordem-yury-dolgoruky-5a999446b6287.jpg",
+      brand: Logo6,
     content: (
       <>
         <Typography gutterBottom>
@@ -58,6 +67,7 @@ export const data = [
     subtitle: "Lorem ipsum dolor sit amet",
     image:
       "https://ogimg.infoglobo.com.br/economia/23362285-45a-64e/FT1086A/apex.jpg",
+      brand: Logo2,
     content: (
       <>
         <Typography gutterBottom>
@@ -84,6 +94,7 @@ export const data = [
     subtitle: "Lorem ipsum dolor sit amet",
     image:
       "https://www.opovo.com.br/_midias/jpg/2021/11/22/fecomercio_03-17543635.jpg",
+      brand: Logo5,
     content: (
       <>
         <Typography gutterBottom>
@@ -109,6 +120,7 @@ export const data = [
     title: "Governo de Mato Grosso",
     subtitle: "Lorem ipsum dolor sit amet",
     image: "https://www.leiagora.com.br/imgsite/noticias/amp-palacio(7).jpg",
+    brand: Logo3,
     content: (
       <>
         <Typography gutterBottom>
@@ -135,6 +147,7 @@ export const data = [
     subtitle: "Lorem ipsum dolor sit amet",
     image:
       "https://guiadovestibulinho.com.br/wp-content/uploads/2023/07/SENAC-SP-Lista-completa-com-TODOS-OS-CURSOS-oferecidos-e1690532842967.jpg",
+      brand: Logo1,
     content: (
       <>
         <Typography gutterBottom>
@@ -161,6 +174,7 @@ export const data = [
     subtitle: "Lorem ipsum dolor sit amet",
     image:
       "https://www.crea-mt.org.br/portal/wp-content/uploads/2021/12/IMG_2783-847x565.jpg",
+      brand: Logo4,
     content: (
       <>
         <Typography gutterBottom>

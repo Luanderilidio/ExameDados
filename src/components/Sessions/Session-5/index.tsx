@@ -29,7 +29,11 @@ export const Session5 = () => {
           alt=""
           className="absolute -right-10 opacity-30 hidden"
         />
-
+        <img
+          src={Ilustration6}
+          alt=""
+          className="absolute -left-10 hidden sm:block"
+        />
         <div className="col-span-12 flex items-center  justify-evenly h-96 rounded-3xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400">
           <div className="hidden sm:flex gap-5 ">
             <div className="w-8 h-60 rounded-full shadow-lg shadow-black/30">

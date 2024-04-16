@@ -25,7 +25,7 @@ export const Session4 = () => {
         <img
           src={Ilustration6}
           alt=""
-          className="absolute -left-10 hidden sm:block"
+          className="absolute -right-10 hidden sm:block"
         />
         <img
           src={Background}
@@ -57,6 +57,7 @@ export const Session4 = () => {
                   title={item.title}
                   subtitle={item.subtitle}
                   content={item.content}
+                  brand={item.brand}
                 />
               </SwiperSlide>
             ))}
@@ -115,6 +116,7 @@ export const Session4 = () => {
                   title={item.title}
                   subtitle={item.subtitle}
                   content={item.content}
+                  brand={item.brand}
                 />
               </SwiperSlide>
             ))}
