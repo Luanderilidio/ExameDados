@@ -1,6 +1,8 @@
 import { Base } from "../../Base";
-import CloseIcon from '@mui/icons-material/Close';
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import CloseIcon from "@mui/icons-material/Close";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import TrendingFlatRoundedIcon from "@mui/icons-material/TrendingFlatRounded";
 import Image1 from "../../../assets/Image1.png";
 import Image2 from "../../../assets/Image2.png";
 import Image3 from "../../../assets/Image3.png";
@@ -10,18 +12,28 @@ import Ilustration7 from "../../../assets/Ilustration7.svg";
 import Ilustration8 from "../../../assets/Ilustration8.png";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import { useBoolean } from "react-hooks-shareable";
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, Typography } from "@mui/material";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import ReactMarkdown from "react-markdown";
 import { markdownContent } from "./data";
 import { BootstrapDialog, Transition } from "../../../utils/Transition";
+import "swiper/css";
+import "swiper/css/pagination";
+import "../../../utils/Swiper.css";
+import CardProducts from "../../CardProducts";
 
 export const Session3 = () => {
   const [currentValue1, setTrue1, setFalse1, toggleValue1] = useBoolean(false);
   const [currentValue2, setTrue2, setFalse2, toggleValue2] = useBoolean(false);
   const [currentValue3, setTrue3, setFalse3, toggleValue3] = useBoolean(false);
   const [currentValue4, setTrue4, setFalse4, toggleValue4] = useBoolean(false);
-
-  
 
   return (
     <Base>
@@ -44,7 +56,33 @@ export const Session3 = () => {
             </span>
           </h1>
         </div>
-        <div className="col-span-2 sm:col-span-1 flex flex-col justify-between gap-10">
+        <div className="col-span-2">
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            {[1, 2, 3, 4].map((item: any, index): any => (
+              <SwiperSlide>
+                <CardProducts />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="flex gap-1 items-center justify-end">
+            <div className="px-4 border-[1px] border-black/30 rounded-2xl">
+              <TrendingFlatRoundedIcon className="text-black/30 rotate-180" />
+            </div>
+            <div className="px-4 border-[1px] border-black/30 rounded-2xl">
+              <TrendingFlatRoundedIcon className="text-black/30" />
+            </div>
+          </div>
+        </div>
+        {/* <div className="col-span-2 sm:col-span-1 flex flex-col justify-between gap-10">
           <div className="flex flex-col sm:flex-row gap-5 ">
             <div className="rounded-t-2xl relative ">
               <img
@@ -212,9 +250,8 @@ export const Session3 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-
 
       <BootstrapDialog
         onClose={setFalse1}
@@ -228,7 +265,7 @@ export const Session3 = () => {
           aria-label="close"
           onClick={setFalse1}
           sx={{
-            position: 'absolute',
+            position: "absolute",
             right: 8,
             top: 8,
             color: (theme) => theme.palette.grey[500],
@@ -239,19 +276,20 @@ export const Session3 = () => {
         <DialogContent dividers>
           <Typography gutterBottom>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
           </Typography>
           <br />
           <Typography gutterBottom>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor.
           </Typography>
           <br />
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+            dui. Donec ullamcorper nulla non metus auctor fringilla.
           </Typography>
         </DialogContent>
         <DialogActions>
@@ -273,7 +311,7 @@ export const Session3 = () => {
           aria-label="close"
           onClick={setFalse2}
           sx={{
-            position: 'absolute',
+            position: "absolute",
             right: 8,
             top: 8,
             color: (theme) => theme.palette.grey[500],
@@ -284,19 +322,20 @@ export const Session3 = () => {
         <DialogContent dividers>
           <Typography gutterBottom>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
           </Typography>
           <br />
           <Typography gutterBottom>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor.
           </Typography>
           <br />
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+            dui. Donec ullamcorper nulla non metus auctor fringilla.
           </Typography>
         </DialogContent>
         <DialogActions>
@@ -318,7 +357,7 @@ export const Session3 = () => {
           aria-label="close"
           onClick={setFalse3}
           sx={{
-            position: 'absolute',
+            position: "absolute",
             right: 8,
             top: 8,
             color: (theme) => theme.palette.grey[500],
@@ -329,19 +368,20 @@ export const Session3 = () => {
         <DialogContent dividers>
           <Typography gutterBottom>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
           </Typography>
           <br />
           <Typography gutterBottom>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor.
           </Typography>
           <br />
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+            dui. Donec ullamcorper nulla non metus auctor fringilla.
           </Typography>
         </DialogContent>
         <DialogActions>
@@ -363,7 +403,7 @@ export const Session3 = () => {
           aria-label="close"
           onClick={setFalse4}
           sx={{
-            position: 'absolute',
+            position: "absolute",
             right: 8,
             top: 8,
             color: (theme) => theme.palette.grey[500],
@@ -374,19 +414,20 @@ export const Session3 = () => {
         <DialogContent dividers>
           <Typography gutterBottom>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
           </Typography>
           <br />
           <Typography gutterBottom>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor.
           </Typography>
           <br />
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+            dui. Donec ullamcorper nulla non metus auctor fringilla.
           </Typography>
         </DialogContent>
         <DialogActions>

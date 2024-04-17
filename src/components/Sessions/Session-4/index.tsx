@@ -1,5 +1,3 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
 import { Base } from "../../Base";
 import Ilustration5 from "../../../assets/Ilustration5.svg";
 import Ilustration6 from "../../../assets/Ilustration6.svg";
@@ -8,6 +6,8 @@ import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import { CardCase } from "../../CardCase";
 
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../../../utils/Swiper.css";
