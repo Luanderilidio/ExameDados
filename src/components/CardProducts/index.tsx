@@ -11,7 +11,7 @@ import {
 import Image from "../../assets/Ilustration12.png";
 import Image1 from "../../assets/Image1.png";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import FlashOnOutlinedIcon from "@mui/icons-material/FlashOnOutlined";
+import CallMadeRoundedIcon from "@mui/icons-material/CallMadeRounded";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 import { BootstrapDialog } from "../../utils/Transition";
 import CloseIcon from "@mui/icons-material/Close";
@@ -36,7 +36,7 @@ export default function CardProducts() {
         backgroundImage: `url(${Image1})`,
       }}
     >
-      <div className="absolute top-5 right-5" onClick={setTrue2}>
+      <div className="absolute top-5 right-5 sm:hidden" onClick={setTrue2}>
         <div className="relative">
           <div className="absolute z-10 text-white overflow-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <PlayArrowRoundedIcon />
@@ -57,16 +57,19 @@ export default function CardProducts() {
           website that is user-friendly and easily navigable.
         </p>
         <div className="!z-10 flex items-center justify-between mt-5">
-          <div />
-          {/* <div className="bg-green-500 p-2 rounded-xl">
-          <FlashOnOutlinedIcon className="text-black" sx={{ fontSize: 30 }} />
-        </div> */}
           <button
             onClick={setTrue1}
-            className="transition ease-in-out hover:scale-105 active:scale-95 text-amber-500 text-sm font-bold"
+            className="w-full rounded-lg transition ease-in-out hover:scale-105 active:scale-95 border-2 border-amber-500 text-amber-500 text-sm font-bold flex justify-between items-center"
           >
+            <div className="bg-white h-full  border-x-4 border-l-white border-r-amber-500 rounded-lg">
+              <CallMadeRoundedIcon sx={{ fontSize: 40 }} />
+            </div>
+            <div className="flex items-center">
+
             Saiba Mais
             <ChevronRightIcon sx={{ fontSize: 20 }} />{" "}
+            </div>
+            <div />
           </button>
         </div>
       </div>

@@ -21,6 +21,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
+import { useMediaQuery } from "react-responsive";
 import ReactMarkdown from "react-markdown";
 import { markdownContent } from "./data";
 import { BootstrapDialog, Transition } from "../../../utils/Transition";
@@ -29,15 +30,19 @@ import "swiper/css/pagination";
 import "../../../utils/Swiper.css";
 import CardProducts from "../../CardProducts";
 
+
 export const Session3 = () => {
   const [currentValue1, setTrue1, setFalse1, toggleValue1] = useBoolean(false);
   const [currentValue2, setTrue2, setFalse2, toggleValue2] = useBoolean(false);
   const [currentValue3, setTrue3, setFalse3, toggleValue3] = useBoolean(false);
   const [currentValue4, setTrue4, setFalse4, toggleValue4] = useBoolean(false);
 
+  const isMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
+
   return (
     <Base>
-      <div className="h-full sm:h-screen grid grid-cols-2 gap-10 relative !font-Sora px-4 sm:px-0 mt-20">
+      <div className="h-full grid grid-cols-2 gap-10 relative !font-Sora px-4 sm:px-0 mt-20">
         <img
           src={Ilustration6}
           alt=""
@@ -56,16 +61,17 @@ export const Session3 = () => {
             </span>
           </h1>
         </div>
+
         <div className="col-span-2">
           <Swiper
-            spaceBetween={10}
-            slidesPerView={1}
+            spaceBetween={20}
+            slidesPerView={isMobile ? 1 : 4}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
             modules={[Pagination, Autoplay]}
-            className="mySwiper"
+            className="mySwiper "
           >
             {[1, 2, 3, 4].map((item: any, index): any => (
               <SwiperSlide>
