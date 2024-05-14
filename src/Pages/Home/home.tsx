@@ -24,7 +24,7 @@ export default function Home() {
       <Session3 />
       <Session4 />
       <Session5 />
-      <Session6 />
+      {/* <Session6 /> */}
       <Session7 />
       <Footer />
     </div>

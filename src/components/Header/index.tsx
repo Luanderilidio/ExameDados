@@ -17,6 +17,7 @@ import {
   Box,
   Drawer,
   IconButton,
+  Link,
   List,
   ListItemButton,
   ListItemIcon,
@@ -71,10 +72,18 @@ export const Header = () => {
             </button>
           </div>
 
-          <button className="w-fit py-3 px-5 hidden  sm:flex items-center justify-center gap-2 rounded-full  bg-amber-300 hover:bg-amber-400 text-lg text-amber-800 font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-gray-500/10 hover:shadow-gray-500/20 active:shadow-gray-500/5">
-            Agende uma Reunião
-            <EventAvailableIcon sx={{ fontSize: 20 }} />
-          </button>
+          <Link
+            className="!no-underline"
+            href="https://api.whatsapp.com/send?phone=5565981354369&text=Ol%C3%A1,%20quero%20falar%20com%20um%20especialista."
+            target="_blank"
+            rel="noreferrer"
+          >
+
+            <button className="w-fit py-3 px-5 hidden  sm:flex items-center justify-center gap-2 rounded-full  bg-amber-300 hover:bg-amber-400 text-lg text-amber-800 font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-gray-500/10 hover:shadow-gray-500/20 active:shadow-gray-500/5">
+              Agende uma Reunião
+              <EventAvailableIcon sx={{ fontSize: 20 }} />
+            </button>
+          </Link>
           <button onClick={toggleDrawer(true)} className="sm:hidden">
             <IconButton className="">
               <MenuIcon
@@ -111,7 +120,7 @@ export const Header = () => {
               maxWidth: 380,
               bgcolor: "background.paper",
             }}
-           
+
             onClose={toggleDrawer(false)}
           >
             <List
@@ -166,10 +175,18 @@ export const Header = () => {
             </List>
             <div className="flex items-center flex-col gap-2 mt-36 p-3">
               <img className="w-20 " src={Logo} />
-              <button className="w-fit py-3 px-5   sm:flex items-center justify-center rounded-full  bg-amber-300 hover:bg-amber-400 text-sm text-amber-800 font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-gray-500/10 hover:shadow-gray-500/20 active:shadow-gray-500/5">
-                Agende uma Reunião
-                <EventAvailableIcon sx={{ fontSize: 20 }} />
-              </button>
+              <Link
+                className="!no-underline"
+                href="https://api.whatsapp.com/send?phone=5565981354369&text=Ol%C3%A1,%20quero%20falar%20com%20um%20especialista."
+                target="_blank"
+                rel="noreferrer"
+              >
+
+                <button className="w-fit py-3 px-5   sm:flex items-center justify-center rounded-full  bg-amber-300 hover:bg-amber-400 text-sm text-amber-800 font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-gray-500/10 hover:shadow-gray-500/20 active:shadow-gray-500/5">
+                  Agende uma Reunião
+                  <EventAvailableIcon sx={{ fontSize: 20 }} />
+                </button>
+              </Link>
             </div>
           </Drawer>
         </div>

@@ -76,7 +76,7 @@ export const Session1 = () => {
             </button>
             <Link
               className="!no-underline"
-              href="https://api.whatsapp.com/send?phone=556598135436&text=Ol%C3%A1,%20quero%20falar%20com%20um%20especialista."
+              href="https://api.whatsapp.com/send?phone=5565981354369&text=Ol%C3%A1,%20quero%20falar%20com%20um%20especialista."
               target="_blank"
               rel="noreferrer"
             >

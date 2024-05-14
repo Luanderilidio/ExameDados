@@ -79,9 +79,17 @@ export const Session5 = () => {
               </button>
             </Link>
             <div className="flex flex-col sm:flex-row gap-4 font-Sora">
-              <button className=" py-3 px-5 flex items-center justify-center gap-2 rounded-full  bg-white text-lg text-black font-bold transition ease-in-out hover:scale-105 active:scale-95 ">
-                <EventAvailableIcon sx={{ fontSize: 30 }} /> Agendar Reunião
-              </button>
+              <Link
+                className="!no-underline"
+                href="https://api.whatsapp.com/send?phone=5565981354369&text=Ol%C3%A1,%20quero%20falar%20com%20um%20especialista."
+                target="_blank"
+                rel="noreferrer"
+              >
+
+                <button className=" py-3 px-5 flex items-center justify-center gap-2 rounded-full  bg-white text-lg text-black font-bold transition ease-in-out hover:scale-105 active:scale-95 ">
+                  <EventAvailableIcon sx={{ fontSize: 30 }} /> Agendar Reunião
+                </button>
+              </Link>
               <Link
                 className="!text-white !no-underline"
                 href="https://api.whatsapp.com/send?phone=556598135436&text=Ol%C3%A1,%20quero%20falar%20com%20um%20especialista."

@@ -18,22 +18,22 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useBoolean } from "react-hooks-shareable";
 
 interface PropsCardProducts {
-  name: string;
+  name: React.ReactNode;
   description: string;
   content: React.ReactNode;
-  video: string;
   image: string;
+
 }
 
-export default function CardProducts() {
+export default function CardProducts({ name, description, content, image }: PropsCardProducts) {
   const [currentValue1, setTrue1, setFalse1, toggleValue1] = useBoolean(false);
   const [currentValue2, setTrue2, setFalse2, toggleValue2] = useBoolean(false);
 
   return (
     <div
-      className="h-80 border-red-500 transition ease-in-out relative bg-cover shadow-black/30 shadow-md active:shadow-lg rounded-xl p-5 flex flex-col justify-between gap-5"
+      className="!h-96 w-full border-red-500 transition ease-in-out relative bg-cover shadow-black/30 shadow-md active:shadow-lg rounded-xl p-5 flex flex-col justify-between gap-5"
       style={{
-        backgroundImage: `url(${Image1})`,
+        backgroundImage: `url(${image})`,
       }}
     >
       <div className="absolute top-5 right-5 sm:hidden" onClick={setTrue2}>
@@ -48,13 +48,12 @@ export default function CardProducts() {
         </div>
       </div>
       <div className="absolute rounded-xl bg-gradient-to-t from-black via-black/40 to-transparent w-full h-full overflow-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-      <h1 className="w-fit text-5xl font-bold text-white z-10 rounded-full ">
-        Branding
+      <h1 className="text-white">
+        {name}
       </h1>
       <div className="!z-10">
-        <p className="text-md text-left leading-snug text-white !z-10">
-          Our web designers help you in designing an appealing and engaging
-          website that is user-friendly and easily navigable.
+        <p className="text-sm text-left leading-tight text-white !z-10">
+          {description}
         </p>
         <div className="!z-10 flex items-center justify-between mt-5">
           <button
@@ -66,8 +65,8 @@ export default function CardProducts() {
             </div>
             <div className="flex items-center">
 
-            Saiba Mais
-            <ChevronRightIcon sx={{ fontSize: 20 }} />{" "}
+              Saiba Mais
+              <ChevronRightIcon sx={{ fontSize: 20 }} />{" "}
             </div>
             <div />
           </button>
@@ -80,7 +79,7 @@ export default function CardProducts() {
         open={currentValue1}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Política
+          {name}
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -95,7 +94,9 @@ export default function CardProducts() {
           <CloseIcon />
         </IconButton>
         <DialogContent dividers>
-          <Typography gutterBottom>
+          {content}
+          
+          {/* <Typography gutterBottom>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
             ac consectetur ac, vestibulum at eros.
@@ -111,7 +112,7 @@ export default function CardProducts() {
             Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
             cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
             dui. Donec ullamcorper nulla non metus auctor fringilla.
-          </Typography>
+          </Typography> */}
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={setFalse1}>
@@ -119,23 +120,6 @@ export default function CardProducts() {
           </Button>
         </DialogActions>
       </BootstrapDialog>
-
-      <Dialog
-        maxWidth="lg"
-        sx={{ borderRadius: 16 }}
-        fullWidth
-        open={currentValue2}
-        onClose={setFalse2}
-      >
-        <iframe
-          className="w-full h-[700px] rounded-2xl"
-          src="https://youtube.com/shorts/r4wt06OYEX4?si=CRb54vLzjka76uCQ"
-          title="YouTube video player"
-          // frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          // allowfullscreen
-        />
-      </Dialog>
     </div>
   );
 }

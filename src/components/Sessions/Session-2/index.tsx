@@ -7,6 +7,7 @@ import Cardizin4 from "../../../assets/Cardzin4.svg";
 import Cardizin5 from "../../../assets/Cardzin5.svg";
 import Cardizin6 from "../../../assets/Cardzin6.svg";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import { Link } from "@mui/material";
 
 export const Session2 = () => {
   return (
@@ -48,13 +49,20 @@ export const Session2 = () => {
                 alt=""
                 className=" w-28 absolute top-0 right-5"
               />
+               <Link
+              className="!no-underline"
+              href="https://api.whatsapp.com/send?phone=5565981354369&text=Ol%C3%A1,%20quero%20falar%20com%20um%20especialista."
+              target="_blank"
+              rel="noreferrer"
+            >
+
               <button
-                // onClick={handleOpen}
                 className="w-fit py-3 px-5  flex items-center justify-center gap-2 rounded-full  bg-amber-300 hover:bg-amber-400 text-lg text-amber-800 font-bold transition ease-in-out hover:scale-105 active:scale-95 shadow-xl shadow-gray-500/10 hover:shadow-gray-500/20 active:shadow-gray-500/5"
               >
                 Agende uma Reunião
                 <EventAvailableIcon sx={{ fontSize: 20 }} />
               </button>
+            </Link>
             </div>
 
             <div />

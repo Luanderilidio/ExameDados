@@ -268,7 +268,7 @@ export function Footer() {
                     </svg>
 
                     <span className="text-white transition group-hover:text-white/75">
-                      email@examedados.com
+                    institutoexatadados@gmail.com
                     </span>
                   </a>
                 </li>
@@ -294,7 +294,7 @@ export function Footer() {
                     </svg>
 
                     <span className="text-white transition group-hover:text-white/75">
-                      0123456789
+                    65 9 8135-4369
                     </span>
                   </a>
                 </li>
@@ -321,7 +321,7 @@ export function Footer() {
                   </svg>
 
                   <address className="-mt-0.5 not-italic text-white">
-                    213 Lane, London, United Kingdom
+                  Rua 8 de Abril, N 88, Popular. Cuiabá - MT
                   </address>
                 </li>
               </ul>

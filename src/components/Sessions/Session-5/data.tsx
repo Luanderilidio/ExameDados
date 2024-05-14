@@ -1,7 +1,7 @@
 export const data = [
   {
-    title: "Governo Chines",
-    subtitle: "Lorem ipsum dolor sit amet",
+    title: "China Hi-Tech",
+    subtitle: "Caso de sucesso com China Hi-Tech",
     image:
       "https://areferencia.com/wp-content/uploads/2021/07/china-praca-tiananmen-1024x683.jpg",
   },

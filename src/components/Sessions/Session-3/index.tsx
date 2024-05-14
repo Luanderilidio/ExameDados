@@ -23,7 +23,7 @@ import {
 } from "@mui/material";
 import { useMediaQuery } from "react-responsive";
 import ReactMarkdown from "react-markdown";
-import { markdownContent } from "./data";
+import { data, markdownContent } from "./data";
 import { BootstrapDialog, Transition } from "../../../utils/Transition";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -73,9 +73,9 @@ export const Session3 = () => {
             modules={[Pagination, Autoplay]}
             className="mySwiper "
           >
-            {[1, 2, 3, 4].map((item: any, index): any => (
+            {data.map((item: any, index): any => (
               <SwiperSlide>
-                <CardProducts />
+                <CardProducts content={item.content} description={item.description} image={item.image} name={item.name} key={index} />
               </SwiperSlide>
             ))}
           </Swiper>
